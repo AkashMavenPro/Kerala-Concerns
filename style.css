@@ -1,0 +1,170 @@
+/* Reset & Base Styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html, body {
+  height: 100%;
+  font-family: 'Segoe UI', 'Noto Sans Malayalam', sans-serif;
+  color: #1f3324;
+}
+
+body {
+  background: url('banner.png') no-repeat center center/cover;
+  display: flex;
+  flex-direction: column;
+}
+
+/* Remove background for declaration */
+.no-background,
+.declaration-body {
+  background: #f9f9f9;
+  background-image: none;
+}
+
+/* Container */
+.container {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+/* More transparent */
+}
+
+/* Header Logo + Title Section */
+.hero-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 1rem 2rem;
+  background-color: rgba(255, 255, 255, 0.4);
+  backdrop-filter: blur(8px);
+  position: relative;
+  z-index: 2;
+}
+
+.hero-header img {
+  height: 60px;
+  width: auto;
+}
+
+.hero-header h1 {
+  font-size: 1.5rem;
+  color: #1f3324;
+  margin-left: 1rem;
+  flex: 1;
+}
+
+/* Main Centered Homepage Message */
+.hero-content {
+  text-align: center;
+  padding: 3rem 1rem;
+  color: #ffffff;
+}
+
+.hero-content h2 {
+  font-size: 2.5rem;
+  color: #ffffff;
+  margin-bottom: 1rem;
+}
+
+.hero-content p {
+  font-size: 1.2rem;
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+/* Footer Sticky and Styled */
+.footer {
+  background-color: #1f3324;
+  color: #fff;
+  text-align: center;
+  padding: 1rem;
+  font-size: 0.9rem;
+}
+
+.footer a {
+  color: #fff;
+  text-decoration: underline;
+}
+
+/* Declaration Page Styles */
+.declaration-page main.content {
+  padding: 2rem 3rem;
+  max-width: 960px;
+  margin: auto;
+  background: #ffffff;
+  box-shadow: 0 0 8px rgba(0, 0, 0, 0.05);
+  border-radius: 8px;
+}
+
+.declaration-page h1 {
+  margin-top: 2rem;
+  margin-bottom: 1rem;
+  font-size: 1.6rem;
+  color: #1f3324;
+}
+
+.declaration-page h3 {
+  margin-top: 2rem;
+  font-size: 1.25rem;
+  color: #333;
+}
+
+.declaration-page p,
+.declaration-page li {
+  font-size: 1rem;
+  line-height: 1.6;
+  margin-bottom: 0.75rem;
+  color: #444;
+}
+
+.declaration-page ul {
+  margin-left: 1.5rem;
+  list-style-type: disc;
+  padding-left: 1rem;
+}
+
+/* Divider */
+.declaration-page hr {
+  margin: 2rem 0;
+  border: none;
+  border-top: 1px solid #ccc;
+}
+
+/* Responsive */
+@media screen and (max-width: 768px) {
+ 
+
+  .hero-content h2 {
+    font-size: 1.8rem;
+  }
+
+  .hero-content p {
+    font-size: 1rem;
+    padding: 0 1rem;
+  }
+
+  .hero-header img {
+    height: 45px;
+  }
+
+  .declaration-page main.content {
+    padding: 1.5rem 1rem;
+  }
+
+  .declaration-page h1 {
+    font-size: 1.4rem;
+  }
+
+  .declaration-page h3 {
+    font-size: 1.1rem;
+  }
+
+  .declaration-page p,
+  .declaration-page li {
+    font-size: 0.95rem;
+  }
+}
