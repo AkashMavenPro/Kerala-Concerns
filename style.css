@@ -133,6 +133,24 @@ body {
   border: none;
   border-top: 1px solid #ccc;
 }
+/* Declaration Header Adjustment */
+.declaration-header {
+  background-color: transparent;
+  padding: 1rem 0 2rem;
+  justify-content: flex-start;
+  gap: 1rem;
+  border-bottom: 1px solid #ddd;
+}
+
+.declaration-header img {
+  height: 50px;
+}
+
+.declaration-header h1 {
+  font-size: 1.6rem;
+  color: #1f3324;
+  margin: 0;
+}
 
 /* Responsive */
 @media screen and (max-width: 768px) {
@@ -166,5 +184,14 @@ body {
   .declaration-page p,
   .declaration-page li {
     font-size: 0.95rem;
+  }
+   
+
+  .declaration-header img {
+    height: 40px;
+  }
+
+  .declaration-header h1 {
+    font-size: 1.4rem;
   }
 }
